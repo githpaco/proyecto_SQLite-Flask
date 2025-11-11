@@ -35,10 +35,10 @@ frontend/.cache/
 frontend/.parcel-cache/
 
 # ---- Base de datos ----
-bbdd/*.db
-bbdd/*.sqlite3
-bbdd/*.sqlite
-*.db-journal
+# bbdd/*.db
+# bbdd/*.sqlite3
+# bbdd/*.sqlite
+#  main*.db-journal
 
 # ---- Archivos del sistema ----
 .DS_Store
