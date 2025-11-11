@@ -10,7 +10,7 @@ Este proyecto combina **Flask (Python)** y **Node.js (npm)** para crear una apli
 ---
 
 ## 🧩 Estructura del Proyecto
-
+```
 mi-proyecto-flask-node/
 ├─ bbdd/
 │ └─ chinook.db # Base de datos SQLite
