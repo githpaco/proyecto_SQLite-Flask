@@ -1,0 +1,65 @@
+# ==========================================
+# 🔧 Proyecto Flask + Node.js + SQLite3
+# ==========================================
+
+# ---- Archivos del entorno Python ----
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pytest_cache/
+*.DS_Store
+instance/
+.env
+.venv/
+venv/
+env/
+*.log
+
+# Ignorar entorno virtual global
+backend/venv/
+backend/.venv/
+backend/env/
+backend/.env          # ⚠️ archivo sensible con variables Flask
+backend/__pycache__/
+
+# ---- Archivos del entorno Node.js ----
+frontend/node_modules/
+frontend/.npm/
+frontend/dist/
+frontend/build/
+frontend/.env.local
+frontend/.env.development
+frontend/.env.production
+frontend/.cache/
+frontend/.parcel-cache/
+
+# ---- Base de datos ----
+bbdd/*.db
+bbdd/*.sqlite3
+bbdd/*.sqlite
+*.db-journal
+
+# ---- Archivos del sistema ----
+.DS_Store
+Thumbs.db
+
+# ---- Archivos temporales o de backup ----
+*.tmp
+*.bak
+*.swp
+*.swo
+*~
+.cache/
+logs/
+*.log
+
+# ---- Archivos de entorno VSCode ----
+.vscode/
+.history/
+
+# ---- Otros archivos que no deben versionarse ----
+*.coverage
+coverage/
+htmlcov/
+*.egg-info/

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Explorador SQLite - CRUD</title>
+  <link rel="stylesheet" href="styles.css" />
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TPMCBQ1FP6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TPMCBQ1FP6');
+</script>
+</head>
+<body>
+  <header class="site-header">
+    <h1>SQLite Explorer</h1>
+    <p class="subtitle">Conecta a <code>bbdd/chinook.db</code> — listado de tablas y CRUD</p>
+  </header>
+
+  <main class="container">
+    <aside class="panel left">
+      <h2>Tablas</h2>
+      <ul id="tablesList" class="tables-list"></ul>
+    </aside>
+
+    <section class="panel right">
+      <div id="tableInfo" class="table-info">
+        <h2 id="tableName">Selecciona una tabla</h2>
+        <div id="schema"></div>
+      </div>
+
+      <div id="controls" class="controls hidden">
+        <button id="refreshBtn" class="btn">Refrescar</button>
+        <button id="newBtn" class="btn primary">Nuevo registro</button>
+        <div class="pagination">
+          <button id="prevPage" class="btn">«</button>
+          <span id="pageInfo">0</span>
+          <button id="nextPage" class="btn">»</button>
+        </div>
+      </div>
+
+      <div id="records" class="records"></div>
+      <div id="formModal" class="modal hidden">
+        <div class="modal-card">
+          <h3 id="modalTitle">Nuevo</h3>
+          <form id="recordForm"></form>
+          <div class="modal-actions">
+            <button id="cancelBtn" class="btn">Cancelar</button>
+            <button id="saveBtn" class="btn primary">Guardar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>Proyecto demo — Flask + SQLite + JS (fetch)</small>
+  </footer>
+
+  <script src="api.js"></script>
+  <script src="app.js"></script>
+
+
+</body>
+</html>
